@@ -10,6 +10,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.webpage-body {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 h1, h2, h3 {
   text-decoration-line: underline;
 }
@@ -90,7 +95,7 @@ Home Page
 =================================================
 */
 
-.homeCityView {
+.home .homeCityView {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,7 +104,7 @@ Home Page
   height: 50%;
 }
 
-.homeCityImages {
+.home .homeCityImages {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,11 +114,11 @@ Home Page
   margin: 5px;
 }
 
-.homeCityImages figure {
+.home .homeCityImages figure {
   text-align: center;
 }
 
-.homeCityBtns {
+.home .homeCityBtns {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
@@ -122,7 +127,7 @@ Home Page
   margin: 5px;
 }
 
-.homeCityBtns button {
+.home .homeCityBtns button {
   padding: 10px;
   color: white;
   background-color: rgba(103, 40, 192, 0.806);
@@ -131,19 +136,9 @@ Home Page
 
 /*
 =================================================
-Cities
-=================================================
-*/
-
-/*
-=================================================
 Gallery
 =================================================
 */
-
-.gallery {
-  margin: 5px;
-}
 
 .gallery h1, h3 {
   text-align: center;
@@ -157,14 +152,14 @@ Gallery
   list-style: none;
 }
 
-.main-box {
+.gallery .main-box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
 }
 
-.box-images {
+.gallery .box-images {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
