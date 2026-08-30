@@ -5,7 +5,7 @@ Standard Across Website
 */
 
 body {
-  margin: 0;
+  margin: 50px 0 0 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -176,9 +176,6 @@ Contact Page
 =================================================
 */
 
-.contact-page {
-  margin-top: 50px;
-}
 
 .contact-page form {
   border: 1px solid grey;
@@ -196,9 +193,14 @@ Contact Page
 }
 
 .contact-page .normal-entry {
+  display: grid;
+  grid-template-columns: auto;
+  font-weight: bold;
+}
+
+.contact-page .description-entry {
   display: flex;
-  
-  gap: 15px;
+  flex-direction: column;
   font-weight: bold;
 }
 
@@ -207,4 +209,10 @@ Contact Page
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+}
+
+.contact-page .actualBtn {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
 }

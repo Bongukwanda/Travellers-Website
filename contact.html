@@ -23,28 +23,29 @@
       <p>If you want to share your moments with us, or ask about our travels and experiences your are more than welcome to do so here. We would love to hear from you.</p>
     </div>
     <div>
-      <form action="/submit" method="POST">
+      <form action="/submit" method="POST" id="contactForm">
         <div class="normal-entry">
           <label for="subject">Subject: </label>
-          <input id="subject" type="text" required>
+          <input name="subject" id="subject" type="text" autocomplete="name" required>
         </div>
         <div class="normal-entry">
           <label for="name">Name: </label>
-          <input id="name" type="text" required>
+          <input name="name" id="name" type="text" required>
         </div>
-        <div>
+        <div class="description-entry">
           <label for="description">Description: </label>
           <textarea id="description" name="description" rows="5" cols="50" maxlength="500" wrap="soft" required></textarea>
         </div>
         <div class="normal-entry">
-          <label for="contactEmail">Contact Email: </label>
-          <input id="contactEmail" type="text" required>
+          <label for="email">Contact Email: </label>
+          <input name="email" id="email" type="text" autocomplete="email" required>
         </div>
-        <div>
-          <button id="submitBtn" type="submit">Submit</button>
-          <button id="cancelBtn" type="button">Cancel</button>
+        <div class="btn-styles">
+          <button class="actualBtn" id="resetBtn" type="reset">Reset</button>
+          <button class="actualBtn" id="submitBtn" type="submit">Submit</button>
         </div>
       </form>
     </div>
   </div>
+  <script src="\Travellers-Website\script.js"></script>
 </body>
