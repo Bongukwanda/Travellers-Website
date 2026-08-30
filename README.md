@@ -17,4 +17,4 @@ More than welcome, with some comments to explain the changes and contributions m
 No licensing, open source.
 
 ## Project Status
-Currenlt in Progress.
+Currently in Progress.
