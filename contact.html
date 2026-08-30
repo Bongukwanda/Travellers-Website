@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" lang="en">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="resources\favicon.png" type="image/png" sizes="16x16 32x32">
+  <title>Contact</title>
+</head>
+<body class="contact-page">
+  <header>
+    <nav class="navbar">
+      <ul class="navlinks">
+        <li><a href=#home.html>Home</a></li>
+        <li><a href=#cities>Cities</a></li>
+        <li><a href=#gallery.html>Gallery</a></li>
+        <li><a href=#contact.html>Contact</a></li>
+        <li><a href=#subscribe.html>Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-content">
+    <div>
+      <h1>Share Your Moments and Ask Here</h1>
+      <p>If you want to share your moments with us, or ask about our travels and experiences your are more than welcome to do so here. We would love to hear from you.</p>
+    </div>
+    <div>
+      <form action="/submit" method="POST">
+        <div class="normal-entry">
+          <label for="subject">Subject: </label>
+          <input id="subject" type="text" required>
+        </div>
+        <div class="normal-entry">
+          <label for="name">Name: </label>
+          <input id="name" type="text" required>
+        </div>
+        <div>
+          <label for="description">Description: </label>
+          <textarea id="description" name="description" rows="5" cols="50" maxlength="500" wrap="soft" required></textarea>
+        </div>
+        <div class="normal-entry">
+          <label for="contactEmail">Contact Email: </label>
+          <input id="contactEmail" type="text" required>
+        </div>
+        <div>
+          <button id="submitBtn" type="submit">Submit</button>
+          <button id="cancelBtn" type="button">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
