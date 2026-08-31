@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width" name="viewport">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="\styles.css">
+    <link rel="icon" href="\resources\favicon.png" type="image/png" size="16x16 32x32">
+  </head>
+  <body class="subscribe">
+    <header>
+      <nav class="navbar">
+        <ul class="navlinks">
+          <li><a href="\webpages\home.html">Home</a></li>
+          <li><a href="#cities">Cities</a></li>
+          <li><a href="\webpages\gallery.html">Gallery</a></li>
+          <li><a href="\webpages\contact.html">Contact</a></li>
+          <li><a href="\webpages\subscribe.html">Subscribe</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="webpage-body">
+      <div>
+        <h1>Catch us on the Newsletter</h1>
+        <p>To follow our adventures and stay tuned into the wonders of what the world has to offer to. How about you subscribe to the newsletter and get <b>bimonthly</b> notices. If needs be we might update it to a weekly item.
+        </p>
+      </div>
+
+      <div>
+        <form method="post" id="subscribefrom">
+          <div>
+            <p><b>Please Note</b><br>This is to sign up to the newsletter: it sends out an email bimonthly. This email will be sent out everyday second week of the month. This is a free newsletter, so we will never charge you for it.</p>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email" autocomplete="email" required>
+            <br>
+            <label for="confirmation">Confirm Sign Up: </label>
+            <input name="confirmation" id="confirmation" type="checkbox" required>
+          </div>
+          <br>
+          <div class="btn-styles">
+            <button class="actualBtn" type="reset" id="resetSubscribeBtn">Reset</button>
+            <button class="actualBtn" type="submit" id="submitSubscribeBtn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

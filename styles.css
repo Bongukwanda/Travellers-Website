@@ -171,7 +171,6 @@ Contact Page
 =================================================
 */
 
-
 .contact-page form {
   border: 1px solid grey;
   border-radius: 10px;
@@ -181,10 +180,6 @@ Contact Page
   justify-content: space-evenly;
   gap: 10px;
   padding: 10px;
-}
-
-.contact-page .main-content{
-  margin: 5px;
 }
 
 .contact-page .normal-entry {
@@ -207,6 +202,45 @@ Contact Page
 }
 
 .contact-page .actualBtn {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*
+=================================================
+Subscribe Page
+=================================================
+*/
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.subscribe input {
+  display: block;
+  float: left;
+}
+
+.subscribe label {
+  float: left;
+  clear: both;
+  width: min-content;
+  text-wrap: none;
+}
+
+.subscribe .btn-styles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.subscribe .actualBtn {
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
