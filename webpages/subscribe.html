@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width" name="viewport">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="\styles.css">
+    <link rel="icon" href="\resources\favicon.png" type="image/png" size="16x16 32x32">
+  </head>
+  <body class="subscribe">
+    <header>
+      <nav class="navbar">
+        <ul class="navlinks">
+          <li><a href="\webpages\home.html">Home</a></li>
+          <li><a href="#cities">Cities</a></li>
+          <li><a href="\webpages\gallery.html">Gallery</a></li>
+          <li><a href="\webpages\contact.html">Contact</a></li>
+          <li><a href="\webpages\subscribe.html">Subscribe</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="webpage-body">
+      <div class="subscription-head">
+        <h1>Join the Adventure and Travel with Us.</h1>
+        <p>Follow us on this adventure and grow with our community.</p>
+        <div class="subscription-labels">
+          <label>For Free</label>
+          <label>Bimonthly</label>
+        </div>
+      </div>
+      <div class="subscription-body">
+        <form method="post" id="subscriptionfrom">
+          <div>
+            <p><b>Join the Newsletter</b></p>
+          </div>
+          <div>
+            <label for="confirmation">Confirm Sign Up: </label>
+            <input name="confirmation" id="confirmation" type="checkbox" required>
+            <br>
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email" autocomplete="email" placeholder="wow@email.com" required>
+          </div>
+          <br>
+          <div class="btn-styles">
+            <button class="actualBtn" type="submit" id="submitSubscribeBtn">Join</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
