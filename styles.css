@@ -53,7 +53,7 @@ figure img {
 .navlinks a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: aliceblue;
   transition: color 0.3s;
   padding: 14px 16px;
 }
@@ -87,6 +87,36 @@ figure img {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.footer {
+  text-align: center;
+  background-color: rgba(103, 40, 192, 0.806);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+
+  .main-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10px;
+  }
+
+  .main-body li {
+    display: block;
+    text-decoration: none;
+    font-size: 10px;
+    color: aliceblue;
+    padding: 2px;
+  }
+
+  .main-body div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 /*
