@@ -34,8 +34,8 @@ figure img {
 }
 
 .navbar {
-  background-color: rgba(103, 40, 192, 0.806);
-  border-bottom: 1px solid rgba(103, 40, 192, 0.806);
+  background-color: rgb(198, 142, 23);
+  border-bottom: 1px solid rgb(198, 142, 23);
   position: fixed;
   top: 0;
   width: 100%;
@@ -70,7 +70,7 @@ figure img {
   display: none;
   position: absolute;
   min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(103, 40, 192, 0.806);
+  box-shadow: 0px 8px 16px 0px rgb(198, 142, 23);
   z-index: 1;
 }
 
@@ -91,7 +91,7 @@ figure img {
 
 .footer {
   text-align: center;
-  background-color: rgba(103, 40, 192, 0.806);
+  background-color: rgb(198, 142, 23);
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -107,8 +107,12 @@ figure img {
     display: block;
     text-decoration: none;
     font-size: 10px;
-    color: aliceblue;
+    color: black;
     padding: 2px;
+  }
+
+  .main-body li a {
+    color: black;
   }
 
   .main-body div {
