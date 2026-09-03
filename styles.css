@@ -34,8 +34,8 @@ figure img {
 }
 
 .navbar {
-  background-color: rgba(103, 40, 192, 0.806);
-  border-bottom: 1px solid rgba(103, 40, 192, 0.806);
+  background-color: rgb(198, 142, 23);
+  border-bottom: 1px solid rgb(198, 142, 23);
   position: fixed;
   top: 0;
   width: 100%;
@@ -53,7 +53,7 @@ figure img {
 .navlinks a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: aliceblue;
   transition: color 0.3s;
   padding: 14px 16px;
 }
@@ -70,7 +70,7 @@ figure img {
   display: none;
   position: absolute;
   min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(103, 40, 192, 0.806);
+  box-shadow: 0px 8px 16px 0px rgb(198, 142, 23);
   z-index: 1;
 }
 
@@ -87,6 +87,40 @@ figure img {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.footer {
+  text-align: center;
+  background-color: rgb(198, 142, 23);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+
+  .main-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10px;
+  }
+
+  .main-body li {
+    display: block;
+    text-decoration: none;
+    font-size: 10px;
+    color: black;
+    padding: 2px;
+  }
+
+  .main-body li a {
+    color: black;
+  }
+
+  .main-body div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 /*
