@@ -7,4 +7,4 @@ function displayImage() {
   madridPic.style.display = 'none';
 }
 
-madridBtn.addEventListener('click', () => displayImage);
+madridBtn.addEventListener("click", () => displayImage);
