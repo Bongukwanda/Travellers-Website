@@ -39,7 +39,6 @@ figure img {
   position: fixed;
   top: 0;
   width: 100%;
-  overflow: hidden;
 }
 
 .navlinks {
@@ -48,6 +47,10 @@ figure img {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.navlinks li {
+  position: relative;
 }
 
 .navlinks a {
@@ -62,30 +65,27 @@ figure img {
   background-color: black;
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
+.dropdown .content {
   display: none;
+  list-style-type: none;
+  padding: 0;
   position: absolute;
-  min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgb(198, 142, 23);
-  z-index: 1;
+  min-width: min-content;
+  top: 100%;
+  left: 0;
+  background-color: rgb(198, 142, 23);
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.dropdown .dropdown-content-item {
+  background-color: inherit;
 }
 
-.dropdown-content a:hover {
-  background-color: black;
+.dropdown .dropdown-content-item a {
+  color: aliceblue;
+  white-space: nowrap;
 }
 
-.dropdown:hover .dropdown-content {
+.navlinks .dropdown:hover .content {
   display: block;
 }
 
