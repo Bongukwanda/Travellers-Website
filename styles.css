@@ -4,15 +4,21 @@ Standard Across Website
 =================================================
 */
 
-body {
-  margin: 50px 0 0 0;
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.webpage-body {
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
   display: flex;
   flex-direction: column;
-  margin: 0 5px 0 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3 {
@@ -90,9 +96,10 @@ figure img {
 }
 
 .footer {
-  text-align: center;
   background-color: rgb(198, 142, 23);
   bottom: 0;
+  position: fixed;
+  text-align: center;
   width: 100%;
 }
 
@@ -100,34 +107,32 @@ figure img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 5px 10px;
   margin-bottom: 0;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  li {
-    display: block;
-    text-decoration: none;
-    font-size: 10px;
-    color: black;
-    padding: 2px;
-  }
-
-  li a {
-    color: black;
-  }
-
-  li a:visited {
-    color: purple;
-  }
 }
 
+.main-body div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
+.main-body li {
+  display: block;
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+  padding: 2px;
+}
+
+.main-body li a {
+  color: black;
+}
+
+.main-body li a:visited {
+  color: purple;
+}
 
 /*
 =================================================
@@ -135,26 +140,41 @@ Home Page
 =================================================
 */
 
-.homeCityView {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 50%;
+.home {
+  margin: 50px 5px 150px 10px;
+  width: auto;
 }
 
-.homeCityImages {
+.home .brief-summary {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  max-height: min-content;
+  margin: 5px 0 10px 0;
+}
+
+.home .brief-summary h1, p {
+  padding-bottom: 10px;
+}
+
+.home .city-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   margin: 5px;
 }
 
-.homeCityImages figure {
+.home .city-images .display-rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 10px 0 10px 0;
+}
+
+
+.home .city-images .display-rows figure figcaption,img {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
   text-align: center;
 }
 
@@ -243,62 +263,72 @@ Subscribe Page
 */
 
 .subscribe {
-
-  form {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid grey;
-    border-radius: 10px;
-    padding: 5px;
-    min-width: 350px;
-  }
+  display: flex;
+  flex-direction: column;
+  margin: 50px 10px 150px 10px;
+  align-items: center;
 
   .subscription-head {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-  }
-
-  .subscription-labels {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .subscription-labels label {
-    text-wrap: nowrap;
-    padding-right: 10px;
-  }
-
-  .subscription-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  input {
-    display: block;
-    float: left;
-  }
-
-  label {
-    float: left;
-    clear: both;
-    width: min-content;
-    text-wrap: nowrap;
-  }
-
-  .btn-styles {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     padding: 5px;
-  }
+  
+    .subscription-labels {
+      display: flex;
+      flex-direction: row;
 
-  .actualBtn {
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px 15px 5px 15px;
+      label {
+        padding-left: 10px;
+      }
+    }
+  }
+  
+  .subscribe-form {
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    max-width: 500px;
+    padding: 5px;
+  
+    .subscription-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .subsscription-body-header {
+        justify-content: center;
+        padding-top: 5px;
+      }
+
+      .subscription-body-items {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        .subscription-body-items-labels {
+          margin: 5px;
+          padding: 5px;
+        }
+
+        .subscription-body-items-inputs {
+          margin: 5px;
+          padding: 5px;
+        }
+      }
+
+      .btn-styles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+      }
+
+      .actualBtn {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px 15px 5px 15px;
+      }
+    }
   }
 }
