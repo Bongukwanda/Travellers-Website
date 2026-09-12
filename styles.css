@@ -28,11 +28,11 @@ h1, h2, h3 {
 figure {
   display: flex;
   flex-direction: column;
-}
 
-figure img {
-  width: 250px;
-  height: 150px;
+  img {
+    width: 250px;
+    height: 150px;
+  }
 }
 
 .navbar {
@@ -45,46 +45,49 @@ figure img {
 
 .navlinks {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  li {
+    position: relative;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 0.3s;
+    padding: 14px 16px;
+  }
+
+  a:hover {
+    background-color: black;
+  }
 }
 
-.navlinks li {
-  position: relative;
-}
+.dropdown {
+  .content {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    min-width: min-content;
+    top: 100%;
+    left: 0;
+    background-color: rgb(198, 142, 23);
+  }
 
-.navlinks a {
-  display: block;
-  text-decoration: none;
-  color: aliceblue;
-  transition: color 0.3s;
-  padding: 14px 16px;
-}
+  .dropdown-content-item {
+    background-color: inherit;
+  }
 
-.navlinks a:hover {
-  background-color: black;
-}
-
-.dropdown .content {
-  display: none;
-  list-style-type: none;
-  padding: 0;
-  position: absolute;
-  min-width: min-content;
-  top: 100%;
-  left: 0;
-  background-color: rgb(198, 142, 23);
-}
-
-.dropdown .dropdown-content-item {
-  background-color: inherit;
-}
-
-.dropdown .dropdown-content-item a {
-  color: aliceblue;
-  white-space: nowrap;
+  .dropdown-content-item a {
+    color: aliceblue;
+    white-space: nowrap;
+  }
 }
 
 .navlinks .dropdown:hover .content {
@@ -97,37 +100,37 @@ figure img {
   position: fixed;
   text-align: center;
   width: 100%;
-}
 
-.main-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 0 10px 5px 10px;
-  margin-bottom: 0;
-}
+  .main-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 10px 5px 10px;
+    margin-bottom: 0;
 
-.main-body div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
 
-.main-body li {
-  display: block;
-  text-decoration: none;
-  font-size: 10px;
-  color: black;
-  padding: 2px;
-}
+    li {
+      display: block;
+      text-decoration: none;
+      font-size: 10px;
+      color: black;
+      padding: 2px;
+    }
 
-.main-body li a {
-  color: black;
-}
+    li a {
+      color: black;
+    }
 
-.main-body li a:visited {
-  color: purple;
+    li a:visited {
+      color: purple;
+    }
+  }
 }
 
 /*
@@ -137,41 +140,48 @@ Home Page
 */
 
 .home {
-  margin: 50px 5px 150px 10px;
-  width: auto;
-}
-
-.home .brief-summary {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  margin: 5px 0 10px 0;
-}
+  margin: 50px 5px 0 10px;
 
-.home .brief-summary h1, p {
-  padding-bottom: 10px;
-}
+  .home-summary {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 10px 0;
 
-.home .city-images {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  margin: 5px;
-}
+    h1, p {
+      text-align: center;
+      text-wrap: balance;
+      padding-bottom: 10px;
+    }
+  }
 
-.home .city-images .display-rows {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-right: 10px;
-  padding: 10px 0 10px 0;
-}
+  .home-display {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 100px;
+    justify-content: center;
 
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
 
-.home .city-images .display-rows figure figcaption,img {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  text-align: center;
+      img {
+        justify-content: center;
+        padding: 2px;
+      }
+
+      figcaption {
+        text-align: center;
+        text-wrap: balance;
+        padding: 2px;
+      }
+    }
+  }
 }
 
 /*
