@@ -25,10 +25,6 @@ h1, h2, h3 {
   text-decoration-line: underline;
 }
 
-hr {
-  width: auto;
-}
-
 figure {
   display: flex;
   flex-direction: column;
@@ -248,42 +244,63 @@ Gallery
 Contact Page
 =================================================
 */
-.contact-page {
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 10px 150px 10px;
+  align-items: center;
 
-  form {
-    border: 1px solid grey;
-    border-radius: 10px;
-    display: flex;
-    align-content: left;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .normal-entry {
-    display: grid;
-    grid-template-columns: auto;
-    font-weight: bold;
-  }
-
-  .description-entry {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-  }
-
-  .btn-styles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-  }
-
-  .actualBtn {
-    border: 1px solid black;
-    border-radius: 5px;
+  .contact-description {
+    text-align: center;
+    margin: 5px;
     padding: 5px;
+
+    p {
+      text-wrap: balance;
+    }
+  }
+
+  .contact-submission {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 800px;
+
+    form {
+      border: 1px solid grey;
+      border-radius: 10px;
+      display: flex;
+      align-content: left;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .normal-entry {
+      display: grid;
+      grid-template-columns: auto;
+      font-weight: bold;
+    }
+
+    .description-entry {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+    }
+
+    .btn-styles {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .actualBtn {
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 5px;
+    }
   }
 }
 
