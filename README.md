@@ -2,7 +2,7 @@
 
 ## Description
 This is a project that shows a website created to display the memories made from travelling. The focal point will be the top 3 cities travelled to, sharing images and videos of this place. 
-Languages used HTML, CSS and JavaScript.
+Languages used HTML and CSS.
 
 ## Installation
 The installation is not hectic, your are required to be able to run HTML, CSS and JavaScript. I also used LiverServer Extension on VSCode to test and run project(by Ritwick Dey).
@@ -17,4 +17,4 @@ More than welcome, with some comments to explain the changes and contributions m
 No licensing, open source.
 
 ## Project Status
-Currently in Progress.
+Complete, as per scope.
