@@ -41,52 +41,52 @@ figure {
   position: fixed;
   top: 0;
   width: 100%;
-}
 
-.navlinks {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-  li {
-    position: relative;
-  }
-
-  a {
-    display: block;
-    text-decoration: none;
-    color: aliceblue;
-    transition: color 0.3s;
-    padding: 14px 16px;
-  }
-
-  a:hover {
-    background-color: black;
-  }
-}
-
-.dropdown {
-  .content {
-    display: none;
+  .navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     list-style-type: none;
+    margin: 0;
     padding: 0;
-    position: absolute;
-    min-width: min-content;
-    top: 100%;
-    left: 0;
-    background-color: rgb(198, 142, 23);
+
+    li {
+      position: relative;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: aliceblue;
+      transition: color 0.3s;
+      padding: 14px 16px;
+    }
+
+    a:hover {
+      background-color: black;
+    }
   }
 
-  .dropdown-content-item {
-    background-color: inherit;
-  }
+  .dropdown {
+    .content {
+      display: none;
+      list-style-type: none;
+      padding: 0;
+      position: absolute;
+      min-width: min-content;
+      top: 100%;
+      left: 0;
+      background-color: rgb(198, 142, 23);
+    }
 
-  .dropdown-content-item a {
-    color: aliceblue;
-    white-space: nowrap;
+    .dropdown-content-item {
+      background-color: inherit;
+    }
+
+    .dropdown-content-item a {
+      color: aliceblue;
+      white-space: nowrap;
+    }
   }
 }
 
@@ -183,6 +183,74 @@ Home Page
     }
   }
 }
+
+/*
+=================================================
+Cities 
+=================================================
+*/
+
+.city {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 5px 0 10px;
+
+  .city-summary {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 10px 0;
+  }
+
+  h1, h2, p {
+      text-align: center;
+      text-wrap: balance;
+      padding-bottom: 10px;
+    }
+
+  .city-display {
+    display: flex;
+    flex-direction: column;
+
+    .display-images {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 10px;
+
+      section {
+        padding: 10px;
+        text-align: center;
+        
+        figure {
+          align-items: center;
+        }
+
+        img, figcaption {
+          padding: 2px;
+          text-align: center;
+          text-wrap: balance;
+        }
+      }
+    }
+
+    .city-display-figure {
+      align-items: center;
+      padding: 5px;
+
+      img, figcaption {
+        padding: 2px;
+        text-align: center;
+        text-wrap: balance;
+      }
+    }
+  }
+
+  .city-dislay-last-item {
+    margin-bottom: 75px;
+  }
+}
+
 
 /*
 =================================================
